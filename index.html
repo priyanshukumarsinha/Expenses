@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HackaThon</title>
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/cursor-effects@latest/dist/browser.js"></script>
+</head>
+<body>
+    <div id="main">
+        <div id="page1">
+            <div id="left">
+                <div id="lefttop">
+                    <h2>EXPENSES</h2>
+                    <div id="nav">
+                        <a href="#"><i class="ri-dashboard-2-line"></i> Dashboard</a>
+                        <a href="#"><i class="ri-line-chart-fill"></i> Overview</a>
+                        <a href="#"><i class="ri-git-repository-line"></i> All Expenses</a>
+                        <a href="#"><i class="ri-graduation-cap-line"></i> Categories</a>
+                        <a href="#"><i class="ri-presentation-line"></i> Loans/Debts</a>
+                        <a href="#"><i class="ri-presentation-line"></i> Budget</a>
+                    </div>
+                </div>
+                <div id="leftbottom">
+                    <p>
+                        <a href=""><i class="ri-linkedin-box-fill"></i></a>
+                        <a href=""><i class="ri-instagram-line"></i></a>
+                        <a href=""><i class="ri-facebook-line"></i></a>
+                    </p>
+                   <a href=""> <p id="whatsappLink">
+                        <i class="ri-whatsapp-line"></i>
+                        <span>Join the Communtiy!</span>
+                    </p></a>
+                </div>
+            </div>
+            
+            <div id="content">
+                <div id="top">
+                    <h2>Dashboard</h2>
+                    <div id="searchBar">
+                        <input type="text" placeholder="Search">
+                        <div id="icon">
+                            <i class="ri-search-line"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="overview">
+                    <div id="oleft" class="cards">
+                        <i class="ri-money-dollar-circle-line"></i>
+                        <h3>Income</h3>
+                        Rs. {{data}}
+                    </div>
+                    <div id="ocenter" class="cards">
+                        <i class="ri-file-excel-2-line"></i>
+                        <h3>Expenses</h3>
+                        Rs. {{data}}
+
+                    </div>
+                    <div id="oright" class="cards">
+                        <i class="ri-wallet-2-line"></i>
+                        <h3>Balance</h3>
+                        Rs. {{data}}
+
+                    </div>
+                </div>
+
+                <div id="graph">
+                    <form action="/addExpenses">
+                        <input type="text" placeholder="Payment Name" name="" id="" class="formItem">
+                        <select name="" id="" class="formItem">
+                            <option value="">Categories</option>
+                            <option value="">Food</option>
+                            <option value="">Travel</option>
+                            <option value="">Clothing</option>
+                        </select>
+                        <select name="" id="" class="formItem">
+                            <option value="">Payment Mode</option>
+                            <option value="">Cash</option>
+                            <option value="">UPI</option>
+                            <option value="">Card</option>
+                        </select>
+                        <input type="number" name="" id="" placeholder="Amount" class="formItem">
+
+                        <button class="formItem" type="submit"> + Add Expense</button>
+
+                </div>
+
+                <div id="graph">
+                    <canvas id="myChart" width="100" height="50"></canvas>
+                </div>
+
+                <div id="dbStud">
+                    <div id="dbtop">
+                        <h3>Database</h3>
+                        <div id="dbs">
+                            <h4 class="active">Expenses</h4>
+                            <h4>Income</h4>
+                        </div>
+                    </div>
+
+                    <table>
+                        <tr id="heading">
+                          <td>Category</td>
+                          <td>Payment Name</td>
+                          <td>Amount</td>
+                          <td>Payment Method</td>
+                          <td>Date</td>
+                        </tr>
+                        <tr>
+                            <td><a href="./studentDetails.html">Food</a></td>
+                            <td>Gobi Manchurian</td>
+                            <td>Rs. 30</td>
+                            <td>Cash</td>
+                            <td>23/01/2024</td>
+                          </tr>                        
+                        <tr>
+                        <tr>
+                            <td><a href="./studentDetails.html">Food</a></td>
+                            <td>Gobi Manchurian</td>
+                            <td>Rs. 30</td>
+                            <td>Cash</td>
+                            <td>23/01/2024</td>
+                            </tr>                        
+                        <tr>
+                        <tr>
+                            <td><a href="./studentDetails.html">Food</a></td>
+                            <td>Gobi Manchurian</td>
+                            <td>Rs. 30</td>
+                            <td>Cash</td>
+                            <td>23/01/2024</td>
+                            </tr>                        
+                        <tr>
+                      </table>
+                      
+                </div>
+
+                <div id="dbStud">
+                    <div id="dbtop">
+                        <h3>Database</h3>
+                        <div id="dbs">
+                            <h4>Expenses</h4>
+                            <h4 class="active">Income</h4>
+                        </div>
+                    </div>
+
+                    <table>
+                        <tr id="heading">
+                          <td>Category</td>
+                          <td>Payment Name</td>
+                          <td>Amount</td>
+                          <td>Payment Method</td>
+                          <td>Date</td>
+                        </tr>
+                        <tr>
+                            <td><a href="./studentDetails.html">Food</a></td>
+                            <td>Gobi Manchurian</td>
+                            <td>Rs. 30</td>
+                            <td>Cash</td>
+                            <td>23/01/2024</td>
+                          </tr>                        
+                        <tr>
+                        <tr>
+                            <td><a href="./studentDetails.html">Food</a></td>
+                            <td>Gobi Manchurian</td>
+                            <td>Rs. 30</td>
+                            <td>Cash</td>
+                            <td>23/01/2024</td>
+                            </tr>                        
+                        <tr>
+                        <tr>
+                            <td><a href="./studentDetails.html">Food</a></td>
+                            <td>Gobi Manchurian</td>
+                            <td>Rs. 30</td>
+                            <td>Cash</td>
+                            <td>23/01/2024</td>
+                            </tr>                        
+                        <tr>
+                      </table>
+                      
+                </div>
+
+                <div id="dbStud">
+                    <div id="dbtop">
+                        <h3>Database</h3>
+                        <div id="dbs">
+                            <h4 class="active">Categories</h4>
+                        </div>
+                    </div>
+
+                    <table>
+                        <tr id="heading">
+                          <td>Category</td>
+                          <td>Budget</td>
+                          <td>Spending</td>
+                          <td>Balance</td>
+                          <td>View More</td>
+                        </tr>
+                        <tr>
+                            <td><a href="./studentDetails.html">Food</a></td>
+                            <td>Gobi Manchurian</td>
+                            <td>Rs. 30</td>
+                            <td>Cash</td>
+                            <td><a href="./studentDetails.html"><button>></button></a></td>
+                          </tr>                        
+                        <tr>
+                            <tr>
+                                <td><a href="./studentDetails.html">Food</a></td>
+                                <td>Gobi Manchurian</td>
+                                <td>Rs. 30</td>
+                                <td>Cash</td>
+                                <td><a href="./studentDetails.html"><button>></button></a></td>
+                              </tr>                        
+                            <tr>
+                                <tr>
+                                    <td><a href="./studentDetails.html">Food</a></td>
+                                    <td>Gobi Manchurian</td>
+                                    <td>Rs. 30</td>
+                                    <td>Cash</td>
+                                    <td><a href="./studentDetails.html"><button>></button></a></td>
+                                  </tr>                        
+                                <tr>
+                      </table>
+                      
+                </div>
+                
+
+            </div>
+            <div id="right">
+                <div id="righttop">
+                    <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=Asia%2FKolkata&showTz=0&showCalendars=0&showTabs=0&showPrint=0&showDate=0&showNav=0&showTitle=0" style="border:solid 1px #777"  frameborder="0" scrolling="no"></iframe>
+                </div>
+                <div id="rightbottom">
+                    <h3>Budget</h3>
+                    <div id="notf">
+                        <img src="" alt="">
+                        <div id="notfDetails">
+                            <h3>Heading</h3>
+                            <h4>Date</h4>
+                        </div>
+                    </div>
+                    <div id="notf">
+                        <img src="" alt="">
+                        <div id="notfDetails">
+                            <h3>Heading</h3>
+                            <h4>Date</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+ 
+    <!-- Include Chart.js from CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <script type="module" src="script.js"></script>
+    <script>
+        window.addEventListener("load", (event) => {
+            new cursoreffects.followingDotCursor();
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+[
+    {
+      "name" : "PK",
+      "usn" : "1DS22CB001",
+      "attendance" : [10,50,45],
+      "iaMarks" : [20, 50, 100],
+      "semEndMarks" : [7,8,9],
+      "assignMents" : [10,9,10],
+      "certifiedCourses" : [0,0,2],
+      "extraCurricular" : [5, 6,5],
+      "internship" : [0,0,0]
+    },
+    {
+      "name" : "PP",
+      "usn" : "1DS22CB002",
+      "attendance" : [50,90,85],
+      "iaMarks" : [80, 40, 90],
+      "semEndMarks" : [7,8,9],
+      "assignMents" : [10,9,10],
+      "certifiedCourses" : [0,0,2],
+      "extraCurricular" : [5, 6,5],
+      "internship" : [0,0,0]
+    },
+    {
+      "name" : "Abhinav",
+      "usn" : "1DS22CB003",
+      "attendance" : [50,90,85],
+      "iaMarks" : [80, 40, 90],
+      "semEndMarks" : [7,8,9],
+      "assignMents" : [10,9,10],
+      "certifiedCourses" : [0,0,2],
+      "extraCurricular" : [5, 6,5],
+      "internship" : [0,0,0]
+    }
+  ]
+  
